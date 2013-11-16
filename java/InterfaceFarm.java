@@ -19,8 +19,6 @@ public class InterfaceFarm
 	
 	public static class Tractor implements Vehicle, Hitchable
 	{
-		public Tractor () {}
-		
 		public void go () {
 			System.out.println("Brrrrm!");
 		}
@@ -33,8 +31,6 @@ public class InterfaceFarm
 	
 	public static class Horse implements Animal, Hitchable
 	{
-		public Horse () {}
-		
 		public String noise () {
 			return "Neigh!";
 		}
