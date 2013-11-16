@@ -1,0 +1,34 @@
+
+=head1 Implementations
+
+=over
+
+=item B<< java/DelegationFarm.java >>
+
+=item B<< java/InterfaceFarm.java >>
+
+=item B<< javascript/joose-farm.js >>
+
+=item B<< javascript/lib/joose.js >>
+
+=item B<< perl5/moo-farm.pl >>
+
+=item B<< perl5/moose-farm.pl >>
+
+=item B<< perl5/tiny-farm.pl >>
+
+=item B<< perl6/role-farm.pl6 >>
+
+=item B<< php/trait-farm.php >>
+
+=item B<< ruby/mixin-farm.rb >>
+
+=item B<< ruby/traitor-farm.rb >>
+
+=back
+
+=head1 Contributing
+
+I'd appreciate contributions for any programming languages I've missed;
+in particular any where this sort of thing can be done especially
+elegantly.
