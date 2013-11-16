@@ -6,7 +6,7 @@ public class DelegationFarm
 		public void speak ();
 	}
 	
-	public static class AnimalDelegations
+	public static class AnimalHelper
 	{
 		public void speak (Animal a)
 		{
@@ -19,7 +19,7 @@ public class DelegationFarm
 		public void go ();
 	}
 	
-	public static class VehicleDelegations
+	public static class VehicleHelper
 	{
 		public void go (Vehicle v)
 		{
@@ -33,7 +33,7 @@ public class DelegationFarm
 		public void pull_plough ();
 	}
 
-	public static class HitchableDelegations
+	public static class HitchableHelper
 	{
 		public void pull_plough (Hitchable h)
 		{
@@ -44,31 +44,31 @@ public class DelegationFarm
 	
 	public static class Tractor implements Vehicle, Hitchable
 	{
-		private VehicleDelegations vehicle_delegations;
-		private HitchableDelegations hitchable_delegations;
+		private VehicleHelper vh;
+		private HitchableHelper hh;
 		
 		public Tractor () {
-			vehicle_delegations = new VehicleDelegations ();
-			hitchable_delegations = new HitchableDelegations ();
+			vh = new VehicleHelper ();
+			hh = new HitchableHelper ();
 		}
 		
 		public void go () {
-			vehicle_delegations.go(this);
+			vh.go(this);
 		}
 		
 		public void pull_plough () {
-			hitchable_delegations.pull_plough(this);
+			hh.pull_plough(this);
 		}
 	}
 	
 	public static class Horse implements Animal, Hitchable
 	{
-		private AnimalDelegations animal_delegations;
-		private HitchableDelegations hitchable_delegations;
+		private AnimalHelper ah;
+		private HitchableHelper hh;
 		
 		public Horse () {
-			animal_delegations = new AnimalDelegations ();
-			hitchable_delegations = new HitchableDelegations ();
+			ah = new AnimalHelper ();
+			hh = new HitchableHelper ();
 		}
 		
 		public String noise () {
@@ -76,7 +76,7 @@ public class DelegationFarm
 		}
 		
 		public void speak () {
-			animal_delegations.speak(this);
+			ah.speak(this);
 		}
 		
 		public void go () {
@@ -84,7 +84,7 @@ public class DelegationFarm
 		}
 		
 		public void pull_plough () {
-			hitchable_delegations.pull_plough(this);
+			hh.pull_plough(this);
 		}
 	}
 	
