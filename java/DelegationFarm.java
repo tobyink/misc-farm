@@ -8,7 +8,7 @@ public class DelegationFarm
 	
 	public static class AnimalHelper
 	{
-		public void speak (Animal a)
+		public static void speak (Animal a)
 		{
 			System.out.println(a.noise());
 		}
@@ -21,7 +21,7 @@ public class DelegationFarm
 	
 	public static class VehicleHelper
 	{
-		public void go (Vehicle v)
+		public static void go (Vehicle v)
 		{
 			System.out.println("Brrrrm!");
 		}
@@ -35,7 +35,7 @@ public class DelegationFarm
 
 	public static class HitchableHelper
 	{
-		public void pull_plough (Hitchable h)
+		public static void pull_plough (Hitchable h)
 		{
 			System.out.println("Hitching plough");
 			h.go();
@@ -44,39 +44,23 @@ public class DelegationFarm
 	
 	public static class Tractor implements Vehicle, Hitchable
 	{
-		private VehicleHelper vh;
-		private HitchableHelper hh;
-		
-		public Tractor () {
-			vh = new VehicleHelper ();
-			hh = new HitchableHelper ();
-		}
-		
 		public void go () {
-			vh.go(this);
+			VehicleHelper.go(this);
 		}
 		
 		public void pull_plough () {
-			hh.pull_plough(this);
+			HitchableHelper.pull_plough(this);
 		}
 	}
 	
 	public static class Horse implements Animal, Hitchable
 	{
-		private AnimalHelper ah;
-		private HitchableHelper hh;
-		
-		public Horse () {
-			ah = new AnimalHelper ();
-			hh = new HitchableHelper ();
-		}
-		
 		public String noise () {
 			return "Neigh!";
 		}
 		
 		public void speak () {
-			ah.speak(this);
+			AnimalHelper.speak(this);
 		}
 		
 		public void go () {
@@ -84,7 +68,7 @@ public class DelegationFarm
 		}
 		
 		public void pull_plough () {
-			hh.pull_plough(this);
+			HitchableHelper.pull_plough(this);
 		}
 	}
 	
