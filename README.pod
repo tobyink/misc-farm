@@ -9,11 +9,11 @@
 
 =item B<< javascript/joose-farm.js >>
 
-=item B<< javascript/lib/joose.js >>
-
 =item B<< perl5/moo-farm.pl >>
 
 =item B<< perl5/moose-farm.pl >>
+
+=item B<< perl5/mop-farm.pl >>
 
 =item B<< perl5/tiny-farm.pl >>
 
@@ -24,6 +24,8 @@
 =item B<< ruby/mixin-farm.rb >>
 
 =item B<< ruby/traitor-farm.rb >>
+
+=item B<< scala/TraitFarm.scala >>
 
 =back
 

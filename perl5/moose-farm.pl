@@ -16,7 +16,7 @@ package Animal
 package Vehicle
 {
 	use Moose::Role;
-
+	
 	sub go {
 		say "Brrrrm!";
 	}
