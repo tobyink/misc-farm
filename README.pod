@@ -3,29 +3,61 @@
 
 =over
 
-=item B<< java/DelegationFarm.java >>
-
 =item B<< java/InterfaceFarm.java >>
 
-=item B<< javascript/joose-farm.js >>
+Java implementation using interfaces.
 
-=item B<< perl5/moo-farm.pl >>
+=item B<< java/DelegationFarm.java >>
 
-=item B<< perl5/moose-farm.pl >>
-
-=item B<< perl5/mop-farm.pl >>
-
-=item B<< perl5/tiny-farm.pl >>
-
-=item B<< perl6/role-farm.pl6 >>
-
-=item B<< php/trait-farm.php >>
+Java implementation using interfaces plus the delegation pattern.
 
 =item B<< ruby/mixin-farm.rb >>
 
+Ruby implementation using mixins.
+
 =item B<< ruby/traitor-farm.rb >>
 
+Ruby implementation using L<traitor|https://github.com/txus/traitor>.
+This doesn't actually seem to work on my machine.
+
+=item B<< php/trait-farm.php >>
+
+PHP 5.4+ implementation using traits.
+
+=item B<< perl5/moose-farm.pl >>
+
+Perl 5 implementation using L<Moose>.
+
+=item B<< perl5/moo-farm.pl >>
+
+Perl 5 implementation using L<Moo>, a small OO framework that promises
+"almost -- but not quite -- two thirds of Moose". It's almost
+line-by-line identical to the Moose implementation.
+
+=item B<< perl5/tiny-farm.pl >>
+
+Perl 5 implementation using minimalist libraries L<Role::Tiny> and
+L<Class::Tiny>.
+
+=item B<< perl5/mop-farm.pl >>
+
+Perl 5 implementation using L<mop|http://github.com/stevan/p5-mop-redux>,
+Steven Little's reimplementation of a subset of Moose, intended for
+inclusion in the Perl core.
+
+=item B<< perl6/role-farm.pl6 >>
+
+Perl 6 implementation using the language's native roles.
+
 =item B<< scala/TraitFarm.scala >>
+
+Scala implementation using the language's native traits.
+
+=item B<< javascript/joose-farm.js >>
+
+Port of the Moose implementation to Javascript and the Joose library.
+Works with Ubuntu's C<< /usr/bin/rhino >>; with minor adjustments will
+work with most other implementations of Javascript.
 
 =back
 
