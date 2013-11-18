@@ -1,6 +1,6 @@
 #!/usr/bin/env rhino
 
-load('http://joose-js.googlecode.com/files/joose.js');
+load('http://joose-js.googlecode.com/files/joose.mini.js');
 
 Role('Animal', {
 	requires: ['noise'],
