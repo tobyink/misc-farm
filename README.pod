@@ -1,5 +1,9 @@
+=head1 Examples of Horizontal Reuse
 
-=head1 Implementations
+This is a set of examples to accompany an article published on the
+L<O'Reilly Programming Blog|http://programming.oreilly.com/>.
+
+=head2 Implementations
 
 =over
 
@@ -61,7 +65,7 @@ work with most other implementations of Javascript.
 
 =back
 
-=head1 Contributing
+=head2 Contributing
 
 I'd appreciate contributions for any programming languages I've missed;
 in particular any where this sort of thing can be done especially
