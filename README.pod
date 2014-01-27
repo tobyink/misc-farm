@@ -1,6 +1,6 @@
 =head1 Examples of Horizontal Reuse
 
-This is a set of examples to accompany an article published on the
+This is a set of examples to accompany L<an article|http://programming.oreilly.com/2014/01/horizontal-reuse-an-alternative-to-inheritance.html> published on the
 L<O'Reilly Programming Blog|http://programming.oreilly.com/>.
 
 =head2 Implementations
