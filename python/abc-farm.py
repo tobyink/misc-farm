@@ -6,6 +6,8 @@ class Animal:
 	__metaclass__ = ABCMeta
 	def speak(self):
 		print(self.noise())
+	def noise(self):
+		raise NotImplementedError()
 
 class Vehicle:
 	__metaclass__ = ABCMeta
@@ -17,6 +19,8 @@ class Hitchable:
 	def pull_plough(self):
 		print("Hitching plough")
 		self.go()
+	def go(self):
+		raise NotImplementedError()
 
 class Tractor(Vehicle,Hitchable):
 	1
