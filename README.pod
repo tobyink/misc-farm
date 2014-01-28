@@ -53,6 +53,10 @@ inclusion in the Perl core.
 
 Perl 6 implementation using the language's native roles.
 
+=item B<< python/mi-farm.py >>
+
+Python example using multiple inheritance.
+
 =item B<< scala/TraitFarm.scala >>
 
 Scala implementation using the language's native traits.
