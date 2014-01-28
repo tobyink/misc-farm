@@ -53,9 +53,9 @@ inclusion in the Perl core.
 
 Perl 6 implementation using the language's native roles.
 
-=item B<< python/mi-farm.py >>
+=item B<< python/abc-farm.py >>
 
-Python example using multiple inheritance.
+Python example using multiple inheritance from abstract base classes.
 
 =item B<< scala/TraitFarm.scala >>
 
