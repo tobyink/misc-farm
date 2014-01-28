@@ -1,14 +1,19 @@
 #!/usr/bin/env python3
 
+from abc import ABCMeta
+
 class Animal:
+	__metaclass__ = ABCMeta
 	def speak(self):
 		print(self.noise())
 
 class Vehicle:
+	__metaclass__ = ABCMeta
 	def go(self):
 		print("Brrrrm!")
 
 class Hitchable:
+	__metaclass__ = ABCMeta
 	def pull_plough(self):
 		print("Hitching plough")
 		self.go()
