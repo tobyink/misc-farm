@@ -13,18 +13,47 @@ public static class Hitchable {
 
 }
 
-public class Vehicle : IGo {
+public class Vehicle {
     public void Go() {
         Console.WriteLine("Brrrrm!");
     }
 }
 
-public class Tractor : Vehicle {
+public class Tractor : Vehicle, IGo {
 }
+
+
+public abstract class Animal {
+    public void Speak() {
+        Console.WriteLine(Noise());
+    }
+
+    public abstract string Noise();
+}
+
+public class Horse : Animal, IGo {
+    public override string Noise() {
+        return "Neigh!";
+    }
+
+    public void Go() {
+        Console.WriteLine("Clip clop");
+    }
+}
+
+
 
 public class Program {
 
     public static void Main() {
-        new Tractor().PullPlough();
+        var tractor = new Tractor();
+        if (tractor is IGo) {
+            tractor.PullPlough();
+        }
+
+        var horse = new Horse();
+        if (horse is IGo) {
+            horse.PullPlough();
+        }
     }
 }
